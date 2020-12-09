@@ -1,0 +1,27 @@
+<article>
+  <div class="row g-3 align-items-center">
+    <div class="col-auto">
+      <label for="currency" class="col-form-label">Currency</label>
+    </div>
+    <div class="col-auto">
+      <select id="currency" class="form-select" aria-label="select Currency" [(ngModel)]="selectedCurrency">
+        <option value="">Select a value</option>
+        <option *ngFor="let currency of currencyList" [value]="currency.id">{{currency.name}}</option>
+      </select>
+    </div>
+    <div class="col-auto">
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="onCurrencySearch()"
+        [disabled]="isSearching"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+  <div class="mt-3">
+    <app-spinner *ngIf="isSearching"></app-spinner>
+    <app-currency-result *ngIf="currencyData" [currency]="currencyData" ></app-currency-result>
+  </div>
+</article>

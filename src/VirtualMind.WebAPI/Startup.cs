@@ -41,6 +41,17 @@ namespace VirtualMind.WebAPI
             });
             services.AddDependendcies(Configuration);
             services.RegisterSwagger();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AlloLocalOrigin",
+                              builder =>
+                              {
+                                  builder.WithOrigins("http://localhost", "http://localhost:4200")
+                                  .AllowAnyHeader()
+                                  .AllowAnyMethod();
+                              });
+            });
         }
 
         /// <summary>
@@ -67,6 +78,8 @@ namespace VirtualMind.WebAPI
 
             if (env.IsDevelopment())
             {
+                app.UseCors("AlloLocalOrigin");
+
                 app.UseDeveloperExceptionPage();
 
                 app.UseSwagger(setup =>
@@ -95,6 +108,7 @@ namespace VirtualMind.WebAPI
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }
