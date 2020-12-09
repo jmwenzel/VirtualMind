@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualMind.WebAPI", "src\VirtualMind.WebAPI\VirtualMind.WebAPI.csproj", "{F1850A92-ACBA-4640-96D4-B69EDF4DA868}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B5B1225D-D9C5-4F3E-85ED-9D2A19D8C013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMind.WebAPI.Tests", "test\VirtualMind.WebAPI.Tests\VirtualMind.WebAPI.Tests.csproj", "{863D4D23-CB3E-47C3-BBDA-8A54CD339103}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1850A92-ACBA-4640-96D4-B69EDF4DA868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1850A92-ACBA-4640-96D4-B69EDF4DA868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1850A92-ACBA-4640-96D4-B69EDF4DA868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1850A92-ACBA-4640-96D4-B69EDF4DA868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863D4D23-CB3E-47C3-BBDA-8A54CD339103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863D4D23-CB3E-47C3-BBDA-8A54CD339103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863D4D23-CB3E-47C3-BBDA-8A54CD339103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863D4D23-CB3E-47C3-BBDA-8A54CD339103}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{863D4D23-CB3E-47C3-BBDA-8A54CD339103} = {B5B1225D-D9C5-4F3E-85ED-9D2A19D8C013}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A16BAB9-9050-4C88-8390-1333566DF3A4}
+	EndGlobalSection
+EndGlobal

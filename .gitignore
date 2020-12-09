@@ -1,0 +1,10 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/VirtualMind.WebAPI/bin/Debug/netcoreapp3.1
+/src/VirtualMind.WebAPI/Logs
+/src/VirtualMind.WebAPI/obj
+/test/VirtualMind.WebAPI.Tests/bin/Debug/netcoreapp3.1
+/test/VirtualMind.WebAPI.Tests/obj
